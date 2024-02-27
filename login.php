@@ -46,7 +46,7 @@
 
             } else {
 
-                echo "<script> alert('Email Address Does Not Exist !!!'); window.location='login' </script>";
+                echo "<script> alert('Email Address Does Not Exist, Kindly Recheck Or Register From The Home Page With A valid Email Address !!!'); window.location='login' </script>";
             }
 
         }
