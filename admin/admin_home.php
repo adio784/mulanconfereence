@@ -23,8 +23,13 @@ if ( !isset($_SESSION['username']) && !isset($_SESSION['password']) ) {
 
     // Today Payments 
     $sqlTPaym    = mysqli_query($db, "SELECT SUM(amount_paid) as tamt FROM payment_history WHERE status=1 AND DATE(`created_at`) = CURDATE()");
-    $sqlTPaym2   = mysqli_fetch_array($sqlTPaym);
-    $tTPaym      = $sqlTPaym2['tamt'];
+    if (mysqli_num_rows($sqlTPaym)) {
+      $sqlTPaym2   = mysqli_fetch_array($sqlTPaym);
+      $tTPaym      = $sqlTPaym2['tamt'];
+    } else {
+      $sqlTPaym2   = 0;
+      $tTPaym      = 0;
+    }
 
     // get all registered users
     $allUsers    = mysqli_query($db, "SELECT *, reg_category.category_name FROM users INNER JOIN reg_category ON users.category = reg_category.category_id");
@@ -352,7 +357,7 @@ if ( !isset($_SESSION['username']) && !isset($_SESSION['password']) ) {
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
                           <h3 class="mb-0"><?= number_format($tTPaym, 2) ?></h3>
-                          <p class="text-primary ml-2 mb-0 font-weight-medium">+<?= round(($tTPaym/$tPaym) * 100) ?>%</p>
+                          <p class="text-primary ml-2 mb-0 font-weight-medium">+<?= ($tPaym == 0) ? '0' : round(($tTPaym / $tPaym) * 100) ?>%</p>
                         </div>
                       </div>
                       <div class="col-3">
