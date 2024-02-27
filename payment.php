@@ -232,9 +232,9 @@ use function PHPSTORM_META\type;
           e.preventDefault();
         //   alert('Welcome');
           let handler = PaystackPop.setup({
-            key: 'pk_test_672f1e2c554539b410e97df8cbde393abf6b5aa4', //'pk_test_c9ca3055dbbb92e1f0009295a4402c5caeb938b4',
+            key: 'pk_live_d753eb9b3caca8b5d7ce49212b25a6768391be2b', //'pk_test_c9ca3055dbbb92e1f0009295a4402c5caeb938b4',
             // key: 'pk_live_ed261d3beb7cae41f315b2d8e6a40228d1f1d280',
-            // 
+            // pk_test_672f1e2c554539b410e97df8cbde393abf6b5aa4
 
             // pk_live_d753eb9b3caca8b5d7ce49212b25a6768391be2b
             
