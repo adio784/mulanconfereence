@@ -239,7 +239,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            Click the green button "Pay so and so amount".
+                            Click the green button to pay.
                         </li>
                         <li class="text-white fw-bold bg-dark p-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
