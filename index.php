@@ -55,16 +55,16 @@
                     $_SESSION['regcategory']    = $categoryreg;
                     $_SESSION['regmemberID']    = $memberRegNo;
                     
-                    echo "<script> alert('Account Successfully Registered, You Will Be Redirected To Payment Page ...'); window.location='payment' </script>";
+                    echo "<script> alert('Membership Registration Completed, You Will Be Redirected To Payment Page ...'); window.location='payment' </script>";
 
                 } else {
 
-                    echo "<script> alert('Account Successfully Registered, You Will Be Redirected To Payment Page ...'); window.location='index' </script>";
+                    echo "<script> alert('Membership Registration Failed, Please Try Later ...'); window.location='index' </script>";
                 }
 
             } else {
 
-                echo "<script> alert('Email Address Already Used !!!'); window.location='index' </script>";
+                echo "<script> alert('Email Address Already Used, You Will Be Redirected To Login Page To Complete Application Process !!!'); window.location='index' </script>";
             }
 
         }
