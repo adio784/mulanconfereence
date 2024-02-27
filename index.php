@@ -175,7 +175,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            Fill the form appropriately (all fields are required)
+                            Fill the form appropriately (all field are required)
                         </li>
                         <li class="text-white fw-bold bg-dark p-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
@@ -239,7 +239,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            Click the green button.
+                            Click the green button "Pay so and so amount".
                         </li>
                         <li class="text-white fw-bold bg-dark p-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
@@ -288,8 +288,8 @@
                             <label for="exampleInputEmail1" class="form-label mb-0">Other Names</label>
                             <input type="text" class="form-control border-0" name="othername" id="exampleInputEmail1" required>
                             <input type="hidden" name="conferent_form" value="<?= uniqid() ?>">
-                            
                         </div>
+                        
                         <div class="mb-3">
                             <label for="exampleInputEmail3" class="form-label mb-0">email</label>
                             <input type="email" class="form-control border-0" name="emailadd" id="exampleInputEmail3" required>
