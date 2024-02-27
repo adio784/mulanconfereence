@@ -288,11 +288,8 @@
                             <label for="exampleInputEmail1" class="form-label mb-0">Other Names</label>
                             <input type="text" class="form-control border-0" name="othername" id="exampleInputEmail1" required>
                             <input type="hidden" name="conferent_form" value="<?= uniqid() ?>">
+                            
                         </div>
-                        
-
-
-                        
                         <div class="mb-3">
                             <label for="exampleInputEmail3" class="form-label mb-0">email</label>
                             <input type="email" class="form-control border-0" name="emailadd" id="exampleInputEmail3" required>
